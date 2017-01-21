@@ -1,0 +1,34 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_below="@+id/tabs"
+    android:id="@+id/topics"
+    android:visibility="invisible"
+    android:elevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView
+        android:id="@+id/list_topics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_topic_bar"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edit_topic_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Add a topic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse" />
+        <ImageButton android:id="@+id/button_add_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_black_24dp"
+            style="?android:borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
