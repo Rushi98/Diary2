@@ -22,6 +22,14 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return new Topics();
             case 1:
                 return new Scribbles();
+                /*
+            case 0:
+                return new Todo();
+            case 1:
+                return new Topics();
+            case 2:
+                return new Scribbles();
+                 */
         }
         return null;
     }
@@ -29,6 +37,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 2;
+        //return 3;
     }
 
     @Override
@@ -38,6 +47,14 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return "TOPICS";
             case 1:
                 return "SCRIBBLES";
+                /*
+            case 0:
+                return "TODO";
+            case 1:
+                return "TOPICS";
+            case 2:
+                return "SCRIBBLES";
+                */
         }
         return null;
     }
