@@ -53,7 +53,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return "TOPICS";
             case 2:
-                return "SCRIBBLES";
+                ret     urn "SCRIBBLES";
                 */
         }
         return null;
