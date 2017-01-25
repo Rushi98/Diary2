@@ -4,16 +4,15 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_below="@id/tabs"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/scribbles_date_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:spinnerMode="dialog"
         android:textAlignment="center"
-        android:padding="5dp"
-        android:background="@color/colorPrimaryLight" />
+        android:padding="8dp" />
 
     <ListView
         android:id="@+id/list_scribbles"
@@ -32,12 +31,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Scribble here"
-            android:scrollbars="vertical"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse" />
+            android:scrollbars="vertical" />
         <ImageButton android:id="@+id/button_scribble_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_check_black_24dp"
-            style="?android:borderlessButtonStyle" />
+            app:srcCompat="@drawable/ic_check_black_24dp" />
     </LinearLayout>
 </LinearLayout>

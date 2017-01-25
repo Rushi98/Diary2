@@ -5,4 +5,4 @@
     android:layout_height="wrap_content"
     android:padding="10sp"
     android:text="Topic"
-    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
